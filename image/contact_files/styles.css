@@ -1,0 +1,757 @@
+* {
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*================ THIS IS WHERE MY HEADER STARTS FROM=================== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f8fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.006);
+    padding: 20px 80px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    height: 60px;
+}
+
+/* .overlay{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    mix-blend-mode: overlay;
+    opacity: 1;
+}  */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+#navbar li a:hover {
+    transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: chocolate;
+}
+
+/* #hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* #hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0081, #6827b0);
+    border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+    transform: scaleX(1.5);
+    transition: 1s;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+ */
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: '';
+    width: 30%;
+    height: 4px;
+    background: chocolate;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+
+/*================= home page hero begins here ==========================  */
+
+#hero {
+    background: url(../images/background/pexels-ylanite-koppens-934070.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding: 0 100px;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2;
+}
+
+#hero h4 {
+    font-size: 1.4em;
+}
+
+#hero h1 {
+    font-size: 2em;
+}
+#hero p{
+    color: rgb(128, 0, 26);
+}
+
+#hero button {
+    display: inline-block;
+    color: black;
+    padding: 14px 20px 14px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(128, 0, 26);
+    border-radius: 12px;
+}
+
+
+
+#hero button a{
+    text-decoration: none;
+    color: initial;
+    content: attr(data-text);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    /* border-right: 2px solid #01fe87; */
+    overflow: hidden;
+    animation: animate  1s alternate infinite;
+    animation-delay: 1s;
+    transition: ease;
+    /* display: inline-block; */
+}
+
+#hero button a::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate  1s alternate infinite;
+    animation-delay: 1s;
+    transition: ease;}
+
+@keyframes animate
+{
+  0%,10%,100%
+  {
+   width: 0; 
+  }
+
+  70%,90%
+  {
+   width: 100%; 
+  }
+
+}
+
+
+
+.section-padding {
+    padding: 40px 80px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0% 13%;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 20px 20px 34px rgb(180, 172, 172);
+    /* border: 1px solid blue; */
+    background: white;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgb(233, 207, 239);
+
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+#feature .fe-box h4 {
+    background: rgba(230, 171, 230, 0.796);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#feature .fe-box:nth-child(2) h4 {
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h4 {
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h4 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h4 {
+    background-color: gold;
+}
+
+#feature .fe-box:nth-child(6) h4 {
+    background-color: #f6dbf6;
+}
+
+#featured-section h2 {
+    font-size: 2em;
+    font-weight: bolder;
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+}
+
+#featured-section .featured-products-sub-heading {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    font-weight: 0px;
+    line-height: 4;
+}
+
+.featured-products {
+    background: rgb(213, 206, 206, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    width: 15%;
+    min-width: 230px;
+    border: 1px ridge rgba(218, 212, 212, 0.9);
+    cursor: pointer;
+    transition: 1s ease;
+    margin: 15px 0;
+    white-space: 15px;
+}
+
+.featured-products img {
+    border-radius: 8px;
+    margin: 0px;
+    width: 100%;
+}
+
+.featured-products:hover {
+    box-shadow: 15px 15px 54px rgb(230, 198, 237);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.description {
+    text-align: center;
+    font-size: medium;
+    padding: 10px 0;
+}
+
+span {
+    color: #0606;
+    font: 1.5em sans-serif;
+}
+
+.banner {
+    margin: 15px 0;
+
+}
+
+.banner h4 {
+    font-size: 30px;
+}
+
+.banner h2 {
+    font-size: 25px;
+}
+
+.banner span {
+    color: orange;
+    font-size: 18px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../images/features/pexels-photo-1010496.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: 10px; */
+    background-position: center;
+    padding: 6%;
+    color: rgb(250, 243, 243);
+}
+
+.newstext h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.newstext p {
+    font-size: 19px;
+    font-weight: 300;
+    color: #818ea0;
+}
+
+.newsletter input {
+    height: 3.3rem;
+    padding: 0 2.25em;
+    width: 90%;
+    border: 1px solid transparent;
+    border-radius: 400px;
+    outline: none;
+}
+
+.form button {
+    width: 40%;
+    height: 35px;
+    margin: 4% 40%;
+    font-size: 16px;
+    background: black;
+    color: white;
+    background: rgb(128, 0, 26);
+}
+
+.form button:hover {
+    background-color: rgba(159, 236, 159, 0.932);
+    color: black;
+    white-space: nowrap;
+}
+
+.newstext span {
+    color: orange;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    background: #f9f8fa;
+    padding: 5%;
+    line-height: 1.5;
+}
+
+.footer-columns {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer.logo {
+    margin-bottom: 30px;
+}
+
+footer h5 {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+
+}
+
+footer a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #222;
+}
+
+.payment img {
+    width: 100px;
+    display: inline;
+    margin-top: 30px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.social-media-icons img {
+    width: 30px;
+}
+
+.social-media-icons {
+    padding: 30px;
+}
+
+.social-media-icons :nth-child(4) {
+    width: 25px;
+}
+
+.social-media-icons :nth-child(1) {
+    width: 30px;
+}
+
+#mobile {
+    display: none;
+}
+
+#close {
+    display: none;
+}
+
+
+/* media queries begins  */
+@media (max-width:800px) {
+    #navbar {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background: #e3e6f3;
+        box-shadow: 0 40px 60px black;
+        padding: 80 0 0 10px;
+        transition: 0.8s;
+    }
+
+
+
+    #navbar li {
+        margin-bottom: 20px;
+    }
+
+    #mobile {
+        display: flex;
+    }
+
+    #mobile img {
+        font-size: 24px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        margin-left: 70%;
+        display: inline;
+    }
+
+    #logo-cart {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 100px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+
+
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+        /* height: 20px; */
+    }
+
+    /* .section-padding {
+        padding: 40px 40px;
+    }
+     */
+    .featured-products {
+        color: initial;
+    }
+
+    #hero {
+        background: url(../images/background/pexels-ylanite-koppens-934070.jpg);
+        line-height: 1;
+        font-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .shop-hero {
+        font-size: 0.5em;
+    }
+
+    
+}
+
+
+
+/* ==================================SHOP PAGE BEGINS HERE============================================== */
+.shop-hero {
+    background: url(../images/background/pexels-pixabay-325876.jpg);
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-hero p{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    display: flex;
+    font-weight: bolder;
+    font-size: 2em;
+    transition: ease-in 2s;
+}
+
+.shop-hero span{
+    color: black;
+    font-size:1em;
+    background-color: #fff;
+}
+/* ==============================contact page begins=========================================== */
+
+.banner-contact{
+    height: 20vh;
+    margin: 10px;
+    padding: 50px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-image: url(../images/background/pexels-alex-andrews-821754.jpg);
+}
+.banner-contact h1 {
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bolder;
+}
+    .banner-contact p{
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+        font-size: 30px;
+        color: red;
+        align-items: center;
+    
+}
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-content-description{
+    /* background: rgb(213, 206, 206, 0.3); */
+    border-radius: 10px;
+    padding: 30px;
+    width: 43%;
+    min-width: 230px;
+    /* border: 1px ridge rgba(218, 212, 212, 0.9); */
+    cursor: pointer;
+    transition: 1s ease;
+    margin: 15px 10px;
+    white-space: 15px;
+}
+.contact-content:nth-child(1){
+    line-height: 2;
+    font-size: large;
+}
+
+.contact-content-description h4{
+    color:grey;
+}
+.contact-content-description h1{
+    font-size:22px;
+    
+}
+.contact-content-description h2{
+    font-size:  20px;    
+}
+.contact-content-description span{
+    color: black;
+    line-height: 1.9;
+    font-size: 18px;
+
+}
+.contact-content-description span a{
+    text-decoration: none;
+    color: inherit;
+}
+.contact-content-description span img{
+    width: 20px;
+    margin: 4px;
+}
+.contact-fieldset{
+    margin: 10px;
+
+}
+fieldset{
+    padding: 100px;
+    background: url(../images/background/pexels-ylanite-koppens-796602.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.contact-fieldset input{
+    display:block;
+    padding: 20px;
+    margin: 20px 10px 20px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.contact-fieldset h2{
+    margin-left:20% ;
+    line-height: 2;
+    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+
+}
+.contact-fieldset h6{
+    margin-left: 19%;
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.contact-fieldset button{
+    display: inline-block;
+    color: black;
+    padding: 14px 20px 14px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(128, 0, 26);
+    border-radius: 12px;
+
+}
+.contact-fieldset a{
+    text-decoration: none;
+    color: initial;
+}
+
+
+
+.message{
+    height: 120px;
+}
+/* ============================================ABOUT PAGE BEGINS HERE============================================= */
+.about-hero{
+    background: url(../images/background/pexels-sevenstorm-juhaszimrus-1187538.jpg);
+    height: 52vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 53vh;
+    background: grey;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+}
+.about-content p{
+    margin: 30px 35% 30px 30px;
+}
