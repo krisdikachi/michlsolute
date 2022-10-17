@@ -861,7 +861,7 @@ a {
 
   #bar{
     color: rgb(251, 74, 4);
-    font-size: 30px;
+    font-size: 50px;
     
   }
   
@@ -994,6 +994,9 @@ a {
 .about-me{
     display: block;
 }
+.about-image{
+    width: 100%;
+}
 .last{
     display: none;
 }
@@ -1083,12 +1086,12 @@ margin-top: 0;
 }
 .mother-flip-box{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 0px;
     margin-bottom: 500px;
 }
 .background-color{
-    /* display: none; */
+    display: none;
     margin-top: 280px;
 }
 button{font-size: 40px;
@@ -1129,16 +1132,20 @@ height: 200px;
 }
 .talks2{
     font-size: 25px;
-    height: 500px;
+    height: 600px;
+    margin-top: 50px;
+    width: 100%;
 }
 .talks{
+    width: 100%;
     font-size: 30px;
 }
 .talks a{
     font-size: 30px;
 }
 .whole-price{
- height: 1700px;
+ height: 1800px;
+ width: 100%;
     display: block;
 }
 .styles{
@@ -1149,7 +1156,7 @@ height: 200px;
 }
 #styles-img{
     height: 500px;
-    width: 500px;
+    width: 300px;
     margin-top: 160px;
 }
 .senators{
@@ -1159,15 +1166,22 @@ height: 200px;
 
 .style-div{
     margin-top: 60px;
+    margin-left: 60px;
+    height: fit-content;
+    width: fit-content;
+   
 }
 .mother-styles{
     display: none;
 }
 .mother-style{
     display: block;
+    
+    width: 100%;
+    
 }
 #mySidenav a {
-    left: 0;
+    left:0;
     font-size: 50px;
     width: 50px;
     
@@ -1191,5 +1205,40 @@ height: 200px;
     top: 260px;
     background-color: #555 /* Light Black */
   }
-  
+ .slideshow-container{
+    width: 100%;
+ } 
+ .main-header{
+    height: 130px;
+    width: 100%;
+ }
+ .logo-name{
+    font-size: 40px;
+ }
+ .logo{
+    height: 90px;
+    width: 90px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.footer1{
+    width: 100%;
+}
+.location a{
+
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+
+    vertical-align: middle;
+    
+}
+.location{
+    font-size: 20px;
+    vertical-align: middle;
+    color: rgb(251, 74, 4);
+}
+
+
 }
