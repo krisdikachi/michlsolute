@@ -599,7 +599,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 #mySidenav a {
     position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
+    right: -80px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     padding: 15px; /* 15px padding */
     position: fixed;
@@ -682,7 +682,7 @@ font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #eee;
     list-style:none
 }
-#go_top{
+/* #go_top{
     
     z-index: 299;
     position: fixed;
@@ -703,7 +703,7 @@ font-family: Arial, Helvetica, sans-serif;
     bottom: 0px;
     cursor: pointer;
     border-radius: 2px;
-}
+} */
 #go_top li i{
     color: white;
 }
@@ -898,7 +898,7 @@ a {
     background-color: transparent;
     height: 60px;
     font-size: 40px;
-    width: 200px;
+    width: 170px;
     background-color: rgb(251, 74, 4);
     display: none;
     border: 1px solid #f1f1f1;
@@ -933,13 +933,35 @@ a {
   .flip-box-front {
     /* background-color: red; */
     height: 60px;
-    width: 200px;
+    width: 170px;
     background-color: rgb(251, 74, 4);
     color: black;
   }
+  #go_top a{
+    
+    z-index: 299;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+     /* background-color: #333;
+    background-color: rgba(0, 0, 0, .3);  */
+    font-size: 90px;
+    background-color:black;
+    line-height: 36px;
+   /* border-radius: 20px; */
+    text-align: center;
+    color: green;
+    top: auto;
+    border: none;
+    left: auto;
+    right: 30px;
+    bottom: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
   button{
     height: 60px;
-    width: 200px;
+    width: 170px;
     background-color: rgb(251, 74, 4);
   }
   /* Style the back side */
@@ -1012,22 +1034,24 @@ a {
 
       .p{
         margin-top: 100px;
+        display: none;
       }
       .catalogue-buttons2{
         height: 100px;
-        width: 250px;
+        
+        width: 150px;
         border-radius: 30px;
     
       }
       .catalogue-button{
-        margin-top: 60px;
-        width: 250px;
+        margin-top: 600px;
+        width: 150px;
         height: 100px;
         border-radius: 30px;
-        margin-left: -220px;
+        /* margin-left: -320px; */
       }
       .catalogue-buttons{
-        width: 250px;
+        width: 150px;
         height: 100px;
         margin-top: 60px;
         margin-left: 0px;
@@ -1044,12 +1068,14 @@ a {
     font-size: 35px;
     margin-left: 40px;
     line-height: 3;
+    /* background-color: red; */
     font-family: 1000;
 
 }
 .mother-testimony{
-    display: none;
- margin-left: 50px;
+    /* display: none; */
+    display: block;
+ margin-left: 0px;
  margin-top: 250px;
  
 }
@@ -1058,6 +1084,7 @@ a {
     line-height: 2.5;
     width: 500px;
     height: 500px;
+   
 }
 .testimony2{
     margin-bottom: 50px;
@@ -1092,9 +1119,11 @@ margin-top: 0;
 }
 .mother-flip-box{
     display: flex;
-    justify-content: space-between;
-    margin-top: 0px;
-    display: none;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    /* display: none; */
+
     margin-bottom: 500px;
 }
 .background-color{
@@ -1132,13 +1161,14 @@ height: 200px;
 .manager2{
    margin-left: -50px;
     padding: 20px;
+    display: none;
 }
 .manager{
-    
+    display: none;
     padding: 20px;
 }
 .talks2{
-    font-size: 25px;
+    font-size: 20px;
     height: 600px;
     margin-top: 50px;
     width: 100%;
@@ -1146,6 +1176,7 @@ height: 200px;
 .talks{
     width: 100%;
     height: fit-content;
+    
     font-size: 20px;
 }
 .talks a{
@@ -1174,7 +1205,7 @@ height: 200px;
 
 .style-div{
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 0px;
     height: fit-content;
     width: fit-content;
    
@@ -1189,16 +1220,25 @@ height: 200px;
     
 }
 #mySidenav a {
-    left:0;
-    font-size: 30px;
-    width: 40px;
+    right:0;
+    position: static;
+    font-size: 20px;
+    width: 30px;
+    margin-top: 40px;
     
 }
 #about {
     top: 20px;
     background-color: #04AA6D;
   }
-  
+  #ig-catalogue{
+width: 100px;
+border-radius: 50%;
+float: right;
+height: 100px;
+background-color: red;
+
+  }
   #blog {
     top: 100px;
     background-color: #2196F3; /* Blue */
@@ -1217,7 +1257,8 @@ height: 200px;
     width: 100%;
  } 
  .main-header{
-    height: 130px;
+    /* height: 130px;/ */
+    height: fit-content;
     width: 100%;
  }
  .logo-name{
@@ -1233,6 +1274,7 @@ height: 200px;
 }
 .footer1{
     width: 100%;
+    font-size: 20px;
 }
 .location a{
 
