@@ -1120,19 +1120,19 @@ a {
  margin-top: 250px;
  /* background-color: rgb(251, 74, 4); */
  width: fit-content;
- margin-left: 20%;
+ margin-left: 0;
 }
 .testimony{
     margin-bottom: 80px;
     line-height: 2.5;
-    width: 350px;
+    width: 280px;
     /* height: 500px; */
     height: fit-content;
    
 }
 .testimony2{
     margin-bottom: 50px;
-    width: 350px;
+    width: 280px;
     /* height: 500px; */
     height: fit-content;
     line-height: 2.5;
@@ -1142,7 +1142,7 @@ a {
 .testimony3{
     line-height: 2.5;
 z-index: 10000;
-    width: 350px;
+    width: 280px;
     /* height: 500px; */
     height: fit-content;
     margin-bottom: 100px;
@@ -1204,20 +1204,21 @@ height: 70px;
 .container_email{
     display: block;
     margin-top: 520px;
-    margin-left: -150px;
+    margin-left: -250px;
     width: 100% !important;
     
 
 }
 .get_started_btn{
     background-color: rgb(251, 74, 4);
-    width: 400px;
+    width: 300px;
     font-size: 20px;
     margin-top: 20px;
+    
 }
 .input{
     width: 300px;
-    /* margin-left: 50px; */
+    margin-left: -5px;
     background-color: #fff;
 }
 .input a{
@@ -1324,12 +1325,12 @@ background-color: red;
     background-color: #555 /* Light Black */
   }
  .slideshow-container{
-    width: 1100px ;
+    width: 100% ;
  } 
  .main-header{
     /* height: 130px;/ */
     height: fit-content;
-    width: 1100px;
+    width: 100%;
  }
  .logo-name{
     font-size:20px;
@@ -1343,7 +1344,7 @@ background-color: red;
     border-radius: 50%;
 }
 .footer1{
-    width: 1100px;
+    width: 100%;
     font-size: 20px;
 }
 .location a{
