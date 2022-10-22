@@ -316,7 +316,7 @@ background-color: rgb(251, 74, 4) ;
       cursor: pointer;
     } */
     .testimony3{
-        height: 400px;
+        height: 500px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -950,6 +950,7 @@ a {
     line-height: 36px;
    /* border-radius: 20px; */
     text-align: center;
+    display: none;
     color: green;
     top: auto;
     border: none;
@@ -959,18 +960,56 @@ a {
     cursor: pointer;
     border-radius: 50%;
 }
-  button{
-    height: 60px;
+.container_email{
+    display: none;
+}
+  .hello{
+    height: 40px;
     width: 170px;
+    font-size: 30px;
+    color: black;
     background-color: rgb(251, 74, 4);
   }
+  
+.input {
+    flex: 1 1 0px;
+    width: 205px;
+    margin-left: 12%;
+    padding: 20px;
+    border-radius: 3px;
+    background: 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid grey;
+    font-family: CoinbaseSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+
+.get_started_btn {
+    background-color: rgba(0, 82, 255, 2);
+    color: #fff;
+    width: 205px;
+    height: 70px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    margin-left: 10px
+}
+
+.container_email {
+    margin-top: 10px
+}
+
+.get_started_btn:hover {
+    cursor: pointer;
+    background-color: #00f
+}
   /* Style the back side */
   .flip-box-back {
     /* background-color: dodgerblue; */
     background-color: rgb(251, 74, 4);
     height: 60px;
     width: 200px;
-    background-color: rgb(251, 74, 4);
+    
     color: white;
     transform: rotateY(180deg);
   }
@@ -1038,7 +1077,7 @@ a {
       }
       .catalogue-buttons2{
         height: 100px;
-        
+        display: none;
         width: 150px;
         border-radius: 30px;
     
@@ -1047,6 +1086,7 @@ a {
         margin-top: 600px;
         width: 150px;
         height: 100px;
+        display: none;
         border-radius: 30px;
         /* margin-left: -320px; */
       }
@@ -1055,6 +1095,7 @@ a {
         height: 100px;
         margin-top: 60px;
         margin-left: 0px;
+        display: none;
         border-radius: 30px;
       }
 #hero{
@@ -1077,19 +1118,23 @@ a {
     display: block;
  margin-left: 0px;
  margin-top: 250px;
- 
+ /* background-color: rgb(251, 74, 4); */
+ width: fit-content;
+ margin-left: 20%;
 }
 .testimony{
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     line-height: 2.5;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    /* height: 500px; */
+    height: fit-content;
    
 }
 .testimony2{
     margin-bottom: 50px;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    /* height: 500px; */
+    height: fit-content;
     line-height: 2.5;
 
 }
@@ -1097,14 +1142,17 @@ a {
 .testimony3{
     line-height: 2.5;
 z-index: 10000;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    /* height: 500px; */
+    height: fit-content;
     margin-bottom: 100px;
     
 }
 
 .testimony-sayer{
-    font-size: 40px;
+    font-size: 20px;
+    float: none;
+    color: rgb(251, 74, 4);
 }
 .father-mother{
 display: block;
@@ -1119,32 +1167,31 @@ margin-top: 0;
 }
 .mother-flip-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 40px;
-
-    /* display: none; */
-
-    margin-bottom: 500px;
+    
+    margin-bottom: 700px;
 }
 .background-color{
     display: none;
     margin-top: 280px;
 }
-button{font-size: 40px;
-color: white;
-height: 200px;
+
+.hello{font-size: 30px;
+color: black;
+height: 70px;
 
 
 }
 .number-1{
-    height: 450px;
+    height: 550px;
     
-    width: 200px;
+    width: 150px;
 }
 .number-2{
-    height: 450px;
+    height: 550px;
     
-    width: 200px;
+    width: 150px;
 }
 .overline{
     font-size: 20px;
@@ -1153,6 +1200,29 @@ height: 200px;
     font-weight: 1000;
 
     
+}
+.container_email{
+    display: block;
+    margin-top: 520px;
+    margin-left: -150px;
+    width: 100% !important;
+    
+
+}
+.get_started_btn{
+    background-color: rgb(251, 74, 4);
+    width: 400px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.input{
+    width: 300px;
+    /* margin-left: 50px; */
+    background-color: #fff;
+}
+.input a{
+    color: rgb(251, 74, 4);
+    font-weight: 1000;
 }
 
 .hero-writing2{
