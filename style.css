@@ -973,8 +973,9 @@ a {
   }
   table {
     border-collapse: collapse;
-    width: 100%;
+    width: 400px;
     font-size: 20px;
+    margin-left: 20px;
   }
   .table{
     display: none;
@@ -1161,7 +1162,7 @@ color: rgb(251, 74, 4);
 }
 .table{
     display: block;
-    width: 594px!important;
+    width: 100%;
 }
 .testimony2{
     margin-bottom: 50px;
@@ -1262,7 +1263,7 @@ height: 70px;
 
 .hero-writing2{
     margin-left: 0;
-    color: rgb(251, 74, 4);
+    color: white;
     font-size: 35px;
     line-height: 3;
   
