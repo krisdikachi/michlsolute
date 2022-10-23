@@ -973,9 +973,9 @@ a {
   }
   table {
     border-collapse: collapse;
-    width: 400px;
+    width: 280px;
     font-size: 20px;
-    margin-left: 20px;
+    
   }
   .table{
     display: none;
@@ -1162,7 +1162,7 @@ color: rgb(251, 74, 4);
 }
 .table{
     display: block;
-    width: 100%;
+    width: 280px;
 }
 .testimony2{
     margin-bottom: 50px;
