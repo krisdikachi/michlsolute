@@ -984,6 +984,7 @@ a {
     padding: 8px;
 
   }
+
   
   tr:nth-child(even){background-color: #f2f2f2;
 color: rgb(251, 74, 4);
@@ -1064,6 +1065,7 @@ color: rgb(251, 74, 4);
     body{
         margin: 0;
         padding: 0;
+        width: 100%!important;
     
         /* display: none; */
     }
